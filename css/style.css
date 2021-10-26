@@ -1,0 +1,51 @@
+html {
+  font-size: 100%; /* 16px par défaut */
+}
+
+body {
+  font-size: 0.75em; /* 12px */
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 2em;
+}
+
+h1 {
+  font-size: 2em; /* 24px */
+}
+/* Header */
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  height: 5em;
+}
+/* nav */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.nav-list a {
+  text-decoration: none;
+}
+.nav-list li {
+  list-style-type: none;
+  border: solid 0.5px #c4c4c4;
+  padding: 0.1em 0.5em;
+  border-radius: 20px;
+  color: #901c1c;
+  font-size: 1.3em;
+}
+.nav-list a:not(:first-child) {
+  margin-left: 0.5em;
+}
+/* main Nos Photograph */
+header h1 {
+  color: #901c1c;
+}
