@@ -42,6 +42,10 @@ nav {
   color: #901c1c;
   font-size: 1.3em;
 }
+.nav-list li:hover {
+  background-color: #901c1c;
+  color: #fff;
+}
 .nav-list a:not(:first-child) {
   margin-left: 0.5em;
 }
