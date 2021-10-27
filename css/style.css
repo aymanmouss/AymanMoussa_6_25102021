@@ -5,8 +5,8 @@ html {
 
 body {
   font-size: 0.75em; /* 12px */
-  margin-left: 3em;
-  margin-right: 3em;
+  /* margin-left: 3em;
+  margin-right: 3em; */
   margin-top: 2em;
 }
 
@@ -16,10 +16,22 @@ h1 {
 a {
   text-decoration: none;
 }
+/* for screen reader only */
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
 /* Header */
 #header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .logo {
   height: 5em;
@@ -36,6 +48,7 @@ nav {
   margin: 0;
   padding: 0;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .tag,
 .nav-list li {
@@ -95,4 +108,25 @@ header h1 {
 }
 .tag:not(:first-child) {
   margin-left: 0.5em;
+}
+
+@media screen and (max-width: 1170px) {
+  .nav {
+    position: absolute;
+    top: 8em;
+  }
+}
+@media screen and (max-width: 455px) {
+  .logo {
+    height: 3.5em;
+  }
+  header h1 {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 387px) {
+  .photographers-list {
+    justify-content: center;
+    margin-top: 2em;
+  }
 }
