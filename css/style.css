@@ -1,5 +1,6 @@
 html {
   font-size: 100%; /* 16px par défaut */
+  font-family: "DM Sans", sans-serif;
 }
 
 body {
@@ -11,6 +12,9 @@ body {
 
 h1 {
   font-size: 2em; /* 24px */
+}
+a {
+  text-decoration: none;
 }
 /* Header */
 #header {
@@ -26,14 +30,14 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.tags,
 .nav-list {
   display: flex;
   margin: 0;
   padding: 0;
+  justify-content: center;
 }
-.nav-list a {
-  text-decoration: none;
-}
+.tag,
 .nav-list li {
   list-style-type: none;
   border: solid 0.5px #c4c4c4;
@@ -52,4 +56,43 @@ nav {
 /* main Nos Photograph */
 header h1 {
   color: #901c1c;
+}
+/* photographers id */
+
+.photographers-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 10em;
+}
+
+.photographers-id {
+  text-align: center;
+  margin-top: 6rem;
+  flex: 0 0 33.333333%;
+}
+.photographers-photo {
+  width: 15.5em;
+  height: 15.5em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.photographers-name {
+  color: #d3563c;
+  font-size: 2.25em;
+  margin-bottom: 0;
+}
+.photographers-location {
+  color: #901c1c;
+  margin-top: 0.6em;
+  margin-bottom: 0;
+}
+.photographers-work {
+  margin: 0.6em 0;
+}
+.photographers-price {
+  color: #757575;
+}
+.tag:not(:first-child) {
+  margin-left: 0.5em;
 }
