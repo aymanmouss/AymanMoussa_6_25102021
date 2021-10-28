@@ -1,0 +1,38 @@
+header {
+  margin-left: 10em;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fafafa;
+  margin: 4em 10em;
+  padding: 6em 5em;
+}
+article h1 {
+  font-size: 4em;
+  margin: 0;
+}
+.location {
+  font-size: 1.5em;
+  color: #901c1c;
+}
+.work {
+  font-size: 1.1em;
+}
+.user-card {
+  display: flex;
+}
+.tags-card {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.contact-me {
+  background-color: #901c1c;
+  color: #fff;
+  border: none;
+  padding: 0.9em;
+  align-self: start;
+  font-size: 20px;
+}
