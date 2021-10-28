@@ -127,6 +127,9 @@ header h1 {
 @media screen and (max-width: 387px) {
   .photographers-list {
     justify-content: center;
-    margin-top: 2em;
+    margin-top: 4em;
+  }
+  .photographers-id:not(:first-child) {
+    margin-top: 4em;
   }
 }
