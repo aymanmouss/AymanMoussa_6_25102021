@@ -1,5 +1,14 @@
+.photographers-page {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 header {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.logo {
   margin-left: 10em;
+  height: 5em;
 }
 .card {
   display: flex;
@@ -10,6 +19,7 @@ header {
 }
 article h1 {
   font-size: 4em;
+  color: #d3573c;
   margin: 0;
 }
 .location {
@@ -35,4 +45,45 @@ article h1 {
   padding: 0.9em;
   align-self: start;
   font-size: 20px;
+}
+.photos {
+  margin: 10em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.photo-card {
+  margin-bottom: 1.8em;
+}
+.photo {
+  height: 300px;
+  width: 350px;
+  object-fit: cover;
+}
+.photo-data {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  color: #901c1c;
+  max-width: 350px;
+}
+.likes {
+  display: flex;
+  align-items: center;
+}
+.likes i {
+  margin-left: 0.5em;
+}
+.likes-price {
+  position: fixed;
+  bottom: 0;
+  right: 1em;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  background-color: #db8876;
+  padding: 0.1em 3em;
+}
+.likes {
+  margin-right: 4em;
 }
