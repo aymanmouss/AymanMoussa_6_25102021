@@ -87,3 +87,6 @@ article h1 {
 .totalLikes {
   margin-right: 4em;
 }
+.totalLikes i {
+  margin-left: 0.5em;
+}
