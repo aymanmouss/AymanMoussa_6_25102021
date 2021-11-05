@@ -74,6 +74,11 @@ nav {
   background-color: #901c1c;
   color: #fff;
 }
+ul a li.active {
+  background-color: #901c1c;
+  color: #fff;
+}
+
 .nav-list a:not(:first-child) {
   margin-left: 0.5em;
 }
@@ -85,7 +90,7 @@ header h1 {
 
 .photographers-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 10em;
 }
@@ -143,4 +148,7 @@ header h1 {
   .photographers-id:not(:first-child) {
     margin-top: 4em;
   }
+}
+.displaynone {
+  display: none;
 }
