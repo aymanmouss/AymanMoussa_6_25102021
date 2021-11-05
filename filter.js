@@ -5,7 +5,7 @@ const photographersId = document.getElementsByClassName("photographers-id");
 export default class filter {
   filterTags(data) {
     return navList[0].addEventListener("click", (e) => {
-      if (e.target.classList.value == "") {
+      if (e.target.classList.value !== "active") {
         Array.from(tagList).map((item) => {
           if (item.classList.value === "active") {
             item.classList.remove("active");
