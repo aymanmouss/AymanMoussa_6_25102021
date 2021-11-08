@@ -6,7 +6,10 @@ const idLocation = window.location.search.split("?id=")[1];
 const mediatype = (data) => {
   if (data.type == "image") {
     return `
+            
             <img src="../medias2/${data.photographerId}/${data.image}" alt="" class="photo">
+           
+            
             `;
   } else {
     return `
@@ -27,7 +30,7 @@ class photographersPage {
     
         <section class="user-card">
             <article class="photographers-information">
-                <h1>${data.name}</h1>
+                <h1 class='test1'>${data.name}</h1>
                 <p class="location">${data.city}, ${data.country}</p>
                 <p class="work">${data.tagline}</p>
                 <ul class="tags-card">
@@ -38,7 +41,7 @@ class photographersPage {
                       .join("")}
                 </ul>
             </article>
-            <a href="#" class="contact-me" id='btn'>Contactez-moi</a>
+            <a href="#" class="contact-me"  >Contactez-moi</a>
         </section>
         <aside class="photo-id">
             <img class="photographers-photo" src="./medias/Photographers ID Photos/${

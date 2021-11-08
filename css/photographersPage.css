@@ -55,6 +55,7 @@ article h1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 .photo-card {
   margin-bottom: 1.8em;
