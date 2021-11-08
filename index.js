@@ -1,5 +1,5 @@
-import photographerslist from "./photographerslist.js";
-import filter from "./filter.js";
+import photographerslist from "./js/photographerslist.js";
+import filter from "./js/filter.js";
 
 const photographerslist1 =
   document.getElementsByClassName("photographers-list");

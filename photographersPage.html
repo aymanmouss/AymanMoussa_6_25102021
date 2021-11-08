@@ -18,98 +18,43 @@
     </header>
     <main class="photographers-page">
         <section class="card">
-            <section class="user-card">
-                <article class="photographers-information">
-                    <h1>Mimi Keel</h1>
-                    <p class="location">London, UK</p>
-                    <p class="work">Voir de beau dans quotidien</p>
-                    <ul class="tags-card">
-                        <li class="tag">#portrait</li>
-                        <li class="tag">#events</li>
-                        <li class="tag">#travel</li>
-                        <li class="tag">#animals</li>
-                    </ul>
-                </article>
-                <button class="contact-me">Contactez-moi</button>
-            </section>
-            <aside class="photo-id">
-                <img class="photographers-photo" src="./medias/Photographers ID Photos/MimiKeel.jpg"
-                    alt='Mimi Keel portrait'>
-            </aside>
         </section>
 
         <section class="photos">
-            <article class="photo-card">
-                <img src="./medias/Mimi/Animals_Rainbow.jpg" alt="" class="photo">
-                <section class="photo-data">
-                    <p class="photo-name">Arc-en-cie</p>
-                    <p class="likes">12 <i class="fas fa-heart"></i></p>
-                </section>
-            </article>
-            <article class="photo-card">
-                <img src="./medias/Mimi/Travel_Lonesome.jpg" alt="" class="photo">
-                <section class="photo-data">
-                    <p class="photo-name">Arc-en-cie</p>
-                    <p class="likes">12 <i class="fas fa-heart"></i></p>
-                </section>
-            </article>
-            <article class="photo-card">
-                <img src="./medias/Mimi/Event_SeasideWedding.jpg" alt="" class="photo">
-                <section class="photo-data">
-                    <p class="photo-name">Arc-en-cie</p>
-                    <p class="likes">12 <i class="fas fa-heart"></i></p>
-                </section>
-            </article>
-            <article class="photo-card">
-                <img src="./medias/Mimi/Portrait_Background.jpg" alt="" class="photo">
-                <section class="photo-data">
-                    <p class="photo-name">Arc-en-cie</p>
-                    <p class="likes">12 <i class="fas fa-heart"></i></p>
-                </section>
-            </article>
-            <article class="photo-card">
-                <img src="./medias/Mimi/Event_PintoWedding.jpg" alt="" class="photo">
-                <section class="photo-data">
-                    <p class="photo-name">Arc-en-cie</p>
-                    <p class="likes">12 <i class="fas fa-heart"></i></p>
-                </section>
-            </article>
-            <article class="photo-card">
-                <img src="./medias/Mimi/Portrait_Nora.jpg" alt="" class="photo">
-                <section class="photo-data">
-                    <p class="photo-name">Arc-en-cie</p>
-                    <p class="likes">12 <i class="fas fa-heart"></i></p>
-                </section>
-            </article>
-            <article class="photo-card">
-                <img src="./medias/Mimi/Event_BenevidesWedding.jpg" alt="" class="photo">
-                <section class="photo-data">
-                    <p class="photo-name">Arc-en-cie</p>
-                    <p class="likes">12 <i class="fas fa-heart"></i></p>
-                </section>
-            </article>
-            <article class="photo-card">
-                <img src="./medias/Mimi/Travel_HillsideColor.jpg" alt="" class="photo">
-                <section class="photo-data">
-                    <p class="photo-name">Arc-en-cie</p>
-                    <p class="likes">12 <i class="fas fa-heart"></i></p>
-                </section>
-            </article>
-            <article class="photo-card">
-                <video src="./medias/Mimi/Animals_Wild_Horses_in_the_mountains.mp4" class="photo"></video>
-                <!-- <img src="./medias/Mimi/Animals_Wild_Horses_in_the_mountains.mp4" alt="" class="photo"> -->
-                <section class="photo-data">
-                    <p class="photo-name">Arc-en-cie</p>
-                    <p class="likes">12<i class="fas fa-heart"></i></p>
-                </section>
-            </article>
+        </section>
+        <section class="modal displaynone">
+            <div class="dialog" role="dialog">
 
-            <aside class="likes-price">
-                <p class="totalLikes">297 081<i class="fas fa-heart"></i></p>
-                <p class="price">300€ / jour</p>
-            </aside>
+                <form method="dialog">
+
+                    <header>
+                        <h1>Contactez-moi <br> Mimi Keel</h1>
+                        <i class="fas fa-times closeBtn"></i>
+                    </header>
+                    <div class="inputData">
+                        <label for="name">Prénom <br></label>
+                        <input type="text" id="name" class="input">
+                    </div>
+                    <div class="inputData">
+                        <label for="lastname">Nom <br></label>
+                        <input type="text" id="lastname" class="input">
+                    </div>
+                    <div class="inputData">
+                        <label for="email">Email<br></label>
+                        <input type="email" id="email" class="input">
+                    </div>
+                    <div class="inputData">
+                        <label for="message">Votre message<br></label>
+                        <textarea type='text' id="message"> </textarea>
+                    </div>
+                    <input type="submit" value="Envoyer" class="btn-submit">
+
+                </form>
+            </div>
         </section>
     </main>
 </body>
 
 </html>
+<script src=".//js/photographersPage.js"></script>
+<script src="./js/form.js"></script>
