@@ -7,13 +7,13 @@ const mediatype = (data) => {
   if (data.type == "image") {
     return `
             
-            <img src="../medias2/${data.photographerId}/${data.image}" alt="" class="photo">
+            <img src="../medias2/${data.photographerId}/${data.image}" alt="" class="photo" id=${data.id}>
            
             
             `;
   } else {
     return `
-            <video controls class="photo">
+            <video controls class="photo" id=${data.id}>
 
             <source src="../medias2/${data.photographerId}/${data.video}" type="video/mp4">
 

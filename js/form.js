@@ -1,7 +1,6 @@
 const contactBtn = document.getElementsByClassName("contact-me");
 const modal = document.querySelector(".modal");
 const closeBtn = document.getElementsByClassName("closeBtn");
-const idLocation = window.location.search.split("?id=")[1];
 
 const launchModal = () => {
   modal.classList.remove("displaynone");
