@@ -38,6 +38,7 @@ a {
   font-size: 18px;
   padding: 0.5em;
   border-radius: 0.4em;
+  z-index: 1;
 }
 #header {
   display: flex;

@@ -1,21 +1,21 @@
 const contactBtn = document.getElementsByClassName("contact-me");
 const modal = document.querySelector(".modal");
 const closeBtn = document.getElementsByClassName("closeBtn");
-
-const launchModal = () => {
-  modal.classList.remove("displaynone");
-};
-
-const closeModal = () => {
-  modal.classList.add("displaynone");
-};
+const idLocation = window.location.search.split("?id=")[1];
 
 window.onload = () => {
+  const launchModal = () => {
+    modal.classList.remove("displaynone");
+  };
+
+  const closeModal = () => {
+    modal.classList.add("displaynone");
+  };
+
   contactBtn[0].addEventListener("click", launchModal);
   closeBtn[0].addEventListener("click", closeModal);
 };
-
-class FormModal {
+export default class FormModal {
   modal(data) {
     return `
         <div class="dialog" role="dialog">
@@ -28,15 +28,15 @@ class FormModal {
             </header>
             <div class="inputData">
                 <label for="name">Prénom <br></label>
-                <input type="text" id="name" class="input">
+                <input type="text" id="name" class="input" placeholder="Prénom" >
             </div>
             <div class="inputData">
                 <label for="lastname">Nom <br></label>
-                <input type="text" id="lastname" class="input">
+                <input type="text" id="lastname" class="input" placeholder="Nom">
             </div>
             <div class="inputData">
                 <label for="email">Email<br></label>
-                <input type="email" id="email" class="input">
+                <input type="email" id="email" class="input" placeholder="exemple@email.com">
             </div>
             <div class="inputData">
                 <label for="message">Votre message<br></label>
@@ -49,12 +49,3 @@ class FormModal {
         `;
   }
 }
-fetch("./photographers.json")
-  .then((res) => res.json())
-  .then((data) => {
-    data.photographers.map((item) => {
-      if (item.id == idLocation) {
-        modal.innerHTML = new FormModal().modal(item);
-      }
-    });
-  });

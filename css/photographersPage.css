@@ -136,8 +136,7 @@ form header h1 {
 }
 .input {
   width: 100%;
-  font-size: 2.5em;
-  margin-top: 0.2em;
+  height: 3em;
 }
 textarea {
   height: 8em;
@@ -160,6 +159,7 @@ label {
 i.fas.fa-times {
   font-size: 2.5em;
   color: #fff;
+  cursor: pointer;
 }
 .displaynone {
   display: none;
@@ -177,6 +177,7 @@ i.fas.fa-times {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 1;
 }
 .lightBox img {
   height: 90%;
@@ -206,7 +207,7 @@ i.fas.fa-times.closeBtn.closeLightBox {
   cursor: pointer;
 }
 .lightBox video {
-  height: 70%;
+  height: 100%;
   width: 70%;
 }
 .boxPhoto {
@@ -214,12 +215,31 @@ i.fas.fa-times.closeBtn.closeLightBox {
   justify-content: center;
   align-items: center;
   overflow: auto;
-  height: 100%;
+  /* height: 90%; */
   width: 100%;
 }
 .lightBox p {
-  margin-top: -1em;
+  /* margin-top: -1em; */
   font-size: 1.5em;
   color: #901c1c;
   max-width: 350px;
+}
+
+/* Total Likes */
+.likesPrice {
+  position: fixed;
+  bottom: 0em;
+  right: 1em;
+  display: flex;
+  align-items: center;
+  font-size: 1.4em;
+  justify-content: center;
+  background-color: #db8876;
+  padding: 0 2em;
+  border-radius: 0.4em 0.4em 0 0;
+}
+.totalLikes {
+  display: flex;
+  align-items: center;
+  margin-right: 3em;
 }

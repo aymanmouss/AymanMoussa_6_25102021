@@ -35,12 +35,13 @@ const previousTitle = () => {
     return (y -= 1);
   }
 };
-window.onload = () => {
-  // Open Light Box modal
-  Array.from(photo).map((item, i) => {
-    item.addEventListener("click", (e) => {
-      lightBox.classList.remove("box");
-      lightBox.innerHTML = `
+export default class LightBoxClass {
+  constructor() {
+    // Open Light Box modal
+    Array.from(photo).map((item, i) => {
+      item.addEventListener("click", (e) => {
+        lightBox.classList.remove("box");
+        lightBox.innerHTML = `
       <div class='boxPhoto'>
          <i class="fas fa-angle-left"></i>
          ${item.outerHTML}
@@ -52,14 +53,14 @@ window.onload = () => {
        .outerHTML
    } 
         `;
-      x = i;
-      y = i;
+        x = i;
+        y = i;
+      });
     });
-  });
-  // next photo
-  window.addEventListener("click", (e) => {
-    if (e.target.classList.value == "fas fa-angle-right") {
-      lightBox.innerHTML = ` 
+    // next photo
+    window.addEventListener("click", (e) => {
+      if (e.target.classList.value == "fas fa-angle-right") {
+        lightBox.innerHTML = ` 
       <div class='boxPhoto'>
       <i class="fas fa-angle-left"></i>
       ${photo[nextReset()].outerHTML}
@@ -68,13 +69,13 @@ window.onload = () => {
      </div>
      ${title[nextTitle()].outerHTML} 
       `;
-    }
-  });
+      }
+    });
 
-  //  previous photo
-  window.addEventListener("click", (e) => {
-    if (e.target.classList.value == "fas fa-angle-left") {
-      lightBox.innerHTML = `
+    //  previous photo
+    window.addEventListener("click", (e) => {
+      if (e.target.classList.value == "fas fa-angle-left") {
+        lightBox.innerHTML = `
       <div class='boxPhoto'>
       <i class="fas fa-angle-left"></i>
       ${photo[previousReset()].outerHTML}
@@ -83,13 +84,13 @@ window.onload = () => {
      </div>
      ${title[previousTitle()].outerHTML} 
       `;
-    }
-  });
+      }
+    });
 
-  //  previous photo with Escape key
-  document.addEventListener("keyup", (e) => {
-    if (e.keyCode == "37") {
-      lightBox.innerHTML = `
+    //  previous photo with Escape key
+    document.addEventListener("keyup", (e) => {
+      if (e.keyCode == "37") {
+        lightBox.innerHTML = `
       <div class='boxPhoto'>
       <i class="fas fa-angle-left"></i>
       ${photo[previousReset()].outerHTML}
@@ -98,12 +99,12 @@ window.onload = () => {
      </div>
      ${title[previousTitle()].outerHTML} 
         `;
-    }
-  });
-  // next photo with keypress
-  document.addEventListener("keyup", (e) => {
-    if (e.keyCode == "39") {
-      lightBox.innerHTML = `
+      }
+    });
+    // next photo with keypress
+    document.addEventListener("keyup", (e) => {
+      if (e.keyCode == "39") {
+        lightBox.innerHTML = `
       <div class='boxPhoto'>
       <i class="fas fa-angle-left"></i>
       ${photo[nextReset()].outerHTML}
@@ -112,20 +113,21 @@ window.onload = () => {
      </div>
      ${title[nextTitle()].outerHTML} 
         `;
-    }
-  });
+      }
+    });
 
-  // Close LightBox onClick
-  window.addEventListener("click", (e) => {
-    if (e.target.classList.value == "fas fa-times closeBtn closeLightBox") {
-      lightBox.classList.add("box");
-    }
-  });
+    // Close LightBox onClick
+    window.addEventListener("click", (e) => {
+      if (e.target.classList.value == "fas fa-times closeBtn closeLightBox") {
+        lightBox.classList.add("box");
+      }
+    });
 
-  // Close LightBox with Escape key
-  window.addEventListener("keyup", (e) => {
-    if (e.keyCode == "27") {
-      lightBox.classList.add("box");
-    }
-  });
-};
+    // Close LightBox with Escape key
+    window.addEventListener("keyup", (e) => {
+      if (e.keyCode == "27") {
+        lightBox.classList.add("box");
+      }
+    });
+  }
+}
