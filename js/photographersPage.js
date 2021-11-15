@@ -5,7 +5,7 @@ const modal = document.querySelector(".modal");
 const total = document.getElementsByClassName("total");
 import LightBoxClass from "./lightBox.js";
 import FormModal from "./form.js";
-import Likes from "./Likes.js";
+import Likes from "./likes.js";
 import TotalLikes from "./totalLikes.js";
 
 // finding the type of the nedia
@@ -103,4 +103,13 @@ fetch("./photographers.json")
         modal.innerHTML = new FormModal().modal(item);
       }
     });
+
+    let titleList = [];
+
+    data.media.map((item) => {
+      if (item.photographerId == idLocation) {
+        titleList.push(item.title);
+      }
+    });
+    console.log(titleList.sort());
   });

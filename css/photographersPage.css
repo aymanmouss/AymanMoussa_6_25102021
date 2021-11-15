@@ -51,7 +51,7 @@ article h1 {
   cursor: pointer;
 }
 .photos {
-  margin: 10em;
+  margin: 6em 10em 10em 10em;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -242,4 +242,46 @@ i.fas.fa-times.closeBtn.closeLightBox {
   display: flex;
   align-items: center;
   margin-right: 3em;
+}
+
+/* DropDown Menue */
+.dropDown {
+  display: flex;
+  margin-left: 10em;
+  margin-top: 5em;
+}
+
+.dropDown label {
+  margin-top: 1.4em;
+}
+#dropDown-menu {
+  list-style: none;
+  background: #901c1c;
+  padding: 1.5em 2em 1.5em 1em;
+  color: #fff;
+  border-radius: 0.4em;
+  width: 9%;
+  position: absolute;
+  margin-left: 8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#dropDown-menu li {
+  font-size: 1.5em;
+  cursor: pointer;
+  width: 100%;
+}
+#dropDown-menu li:nth-child(2) {
+  margin: 1em 0;
+  border-top: solid 0.1em #fff;
+  border-bottom: solid 0.1em #fff;
+  padding: 1em 0;
+}
+.hiden {
+  display: none;
+}
+.fa-chevron-up,
+.fa-chevron-down {
+  float: right;
 }
