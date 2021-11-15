@@ -37,5 +37,5 @@ const photoCard = document.getElementsByClassName("photo-card");
 let cardphoto = [];
 
 Array.from(photoCard).map((item) => {
-  console.log(item.outerHTML);
+  item.outerHTML;
 });
