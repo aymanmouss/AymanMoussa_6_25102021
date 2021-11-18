@@ -1,6 +1,6 @@
 const linkMain = document.getElementById("link-main");
-
-const scrollid = () => {
+let scrollid = null;
+export default scrollid = () => {
   if (window.scrollY >= 20) {
     linkMain.style.display = "block";
   } else {

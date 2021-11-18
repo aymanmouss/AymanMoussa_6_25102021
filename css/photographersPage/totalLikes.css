@@ -1,0 +1,17 @@
+.likesPrice {
+  position: fixed;
+  bottom: 0em;
+  right: 1em;
+  display: flex;
+  align-items: center;
+  font-size: 1.4em;
+  justify-content: center;
+  background-color: #db8876;
+  padding: 0 2em;
+  border-radius: 0.4em 0.4em 0 0;
+}
+.totalLikes {
+  display: flex;
+  align-items: center;
+  margin-right: 3em;
+}

@@ -1,0 +1,63 @@
+/* photographers id */
+
+.photographers-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 10em;
+}
+
+.photographers-id {
+  text-align: center;
+  margin-top: 6rem;
+  flex: 0 0 33.333333%;
+}
+.photographers-photo {
+  width: 15.5em;
+  height: 15.5em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.photographers-name {
+  color: #d3563c;
+  font-size: 2.25em;
+  margin-bottom: 0;
+}
+.photographers-location {
+  color: #901c1c;
+  margin-top: 0.6em;
+  margin-bottom: 0;
+}
+.photographers-work {
+  margin: 0.6em 0;
+}
+.photographers-price {
+  color: #757575;
+}
+.tag:not(:first-child) {
+  margin-left: 0.5em;
+}
+
+@media screen and (max-width: 1170px) {
+  .nav {
+    position: absolute;
+    top: 8em;
+  }
+}
+@media screen and (max-width: 455px) {
+  .logo {
+    height: 3.5em;
+  }
+  header h1 {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 387px) {
+  .photographers-list {
+    justify-content: center;
+    margin-top: 4em;
+  }
+  .photographers-id:not(:first-child) {
+    margin-top: 4em;
+  }
+}

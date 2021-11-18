@@ -1,0 +1,12 @@
+.photographers-page {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+header {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.logo {
+  margin-left: 10em;
+  height: 5em;
+}

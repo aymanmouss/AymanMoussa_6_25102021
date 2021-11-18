@@ -1,0 +1,69 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dialog {
+  display: flex;
+  justify-content: center;
+  background-color: #db8876;
+  align-items: center;
+}
+form {
+  width: 30em;
+  height: 50em;
+  padding: 0em 2em;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1em;
+}
+form header h1 {
+  color: #000;
+  font-size: 3em;
+  margin: 0em;
+}
+.input {
+  width: 100%;
+  height: 3em;
+}
+textarea {
+  height: 8em;
+  width: 100%;
+  margin-top: 0.3em;
+}
+.inputData {
+  margin-bottom: 2em;
+}
+label {
+  font-size: 1.6em;
+}
+.btn-submit {
+  border: none;
+  color: #fff;
+  background-color: #901c1c;
+  padding: 1em 2em;
+  align-self: start;
+}
+i.fas.fa-times {
+  font-size: 2.5em;
+  color: #fff;
+  cursor: pointer;
+}
+.displaynone {
+  display: none;
+}

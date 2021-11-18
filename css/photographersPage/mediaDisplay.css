@@ -1,0 +1,85 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fafafa;
+  margin: 4em 10em;
+  padding: 6em 5em;
+}
+.photographers-information {
+  margin-right: 5em;
+}
+article h1 {
+  font-size: 4em;
+  color: #d3573c;
+  margin: 0;
+}
+.location {
+  font-size: 1.5em;
+  color: #901c1c;
+}
+.work {
+  font-size: 1.1em;
+}
+.user-card {
+  display: flex;
+}
+.tags-card {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.contact-me {
+  background-color: #901c1c;
+  color: #fff;
+  border: none;
+  padding: 0.9em;
+  align-self: start;
+  font-size: 20px;
+  cursor: pointer;
+}
+.photos {
+  margin: 6em 10em 10em 10em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.photo-card {
+  margin-bottom: 1.8em;
+}
+.photo {
+  height: 300px;
+  width: 350px;
+  object-fit: cover;
+}
+.photo-data {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  color: #901c1c;
+  max-width: 350px;
+}
+.likes {
+  display: flex;
+  align-items: center;
+}
+.likes i {
+  margin-left: 0.5em;
+}
+.likes-price {
+  position: fixed;
+  bottom: 0;
+  right: 1em;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  background-color: #db8876;
+  padding: 0.3em 3em;
+}
+.totalLikes {
+  margin-right: 4em;
+}
+.totalLikes i {
+  margin-left: 0.5em;
+}

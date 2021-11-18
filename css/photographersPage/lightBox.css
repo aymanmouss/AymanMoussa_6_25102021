@@ -1,0 +1,59 @@
+.lightBox {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+}
+.lightBox img {
+  height: 90%;
+  width: 80%;
+  object-fit: contain;
+}
+.box {
+  display: none;
+}
+.fa-angle-left,
+.fa-angle-right {
+  font-size: 4em;
+  color: #911c1c;
+  cursor: pointer;
+}
+.fa-angle-left {
+  margin-right: 0.5em;
+}
+.fa-angle-right {
+  margin-left: 0.5em;
+}
+
+i.fas.fa-times.closeBtn.closeLightBox {
+  color: #911c1c;
+  align-self: flex-start;
+  margin-top: 2%;
+  cursor: pointer;
+}
+.lightBox video {
+  height: 100%;
+  width: 70%;
+}
+.boxPhoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  /* height: 90%; */
+  width: 100%;
+}
+.lightBox p {
+  /* margin-top: -1em; */
+  font-size: 1.5em;
+  color: #901c1c;
+  max-width: 350px;
+}
