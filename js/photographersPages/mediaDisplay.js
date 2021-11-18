@@ -7,7 +7,7 @@ const mediatype = (data) => {
     return `
             <video controls class="photo" id=${data.id}>
 
-            <source src="../medias2/${data.photographerId}/${data.video}" type="video/mp4">
+            <source src="../medias/medias2/${data.photographerId}/${data.video}" type="video/mp4">
 
             Sorry, your browser doesn't support embedded videos.
         </video>
