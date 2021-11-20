@@ -4,7 +4,7 @@ import scrollid from "./js/homePage/scroll.js";
 const photographerslist1 =
   document.getElementsByClassName("photographers-list");
 
-fetch("./photographers.json")
+fetch("./Api/photographers.json")
   .then((res) => res.json())
   .then((data) => {
     // Filte Nav Tags Class
