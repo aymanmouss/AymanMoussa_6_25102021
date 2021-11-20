@@ -3,24 +3,21 @@ const modal = document.querySelector(".modal");
 const closeBtn = document.getElementsByClassName("closeBtn");
 const idLocation = window.location.search.split("?id=")[1];
 
-window.onload = () => {
-  const launchModal = () => {
+window.addEventListener("click", (e) => {
+  if (e.target.classList.value == "contact-me") {
     modal.classList.remove("displaynone");
-  };
-
-  const closeModal = () => {
+  }
+  if (e.target.classList.value == "fas fa-times closeBtn") {
     modal.classList.add("displaynone");
-  };
+  }
+});
 
-  contactBtn[0].addEventListener("click", launchModal);
-  closeBtn[0].addEventListener("click", closeModal);
-};
 export default class FormModal {
   modal(data) {
     return `
         <div class="dialog" role="dialog">
 
-        <form method="dialog">
+        <form method="dialog" id='formModal'>
 
             <header>
                 <h1>Contactez-moi <br> ${data.name}</h1>

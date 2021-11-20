@@ -28,8 +28,9 @@ export default class LightBox {
         <i class="fas fa-times closeBtn closeLightBox"></i>
         </div>
         ${
-          e.target.parentElement.getElementsByClassName("photo-name")[0]
-            .outerHTML
+          e.target.parentElement.parentElement.getElementsByClassName(
+            "photo-name"
+          )[0].outerHTML
         }
         `;
       }
@@ -106,6 +107,39 @@ export default class LightBox {
       // ESCAPE TO CLOSE
       if (key.code === "Escape") {
         lightBox.classList.add("box");
+      }
+    });
+
+    // Slect Photo onKeyDown (activate LightBox)
+
+    window.addEventListener("keydown", (e) => {
+      if (
+        e.target.classList.value == "photoLink" &&
+        lightBox.classList.value == "lightBox box" &&
+        e.code == "Enter"
+      ) {
+        arrPhoto = [];
+        [...photo].map((item) => {
+          if (!arrPhoto.includes(item.outerHTML)) {
+            arrPhoto.push(item.outerHTML);
+          }
+        });
+        currentIndex = arrPhoto.indexOf(e.target.outerHTML);
+
+        lightBox.classList.remove("box");
+        lightBox.innerHTML = `
+      <div class='boxPhoto'>
+         <i class="fas fa-angle-left"></i>
+         ${e.target.children[0].outerHTML}
+        <i class="fas fa-angle-right"></i>
+        <i class="fas fa-times closeBtn closeLightBox"></i>
+        </div>
+        ${
+          e.target.parentElement.parentElement.getElementsByClassName(
+            "photo-name"
+          )[0].outerHTML
+        }
+        `;
       }
     });
   }

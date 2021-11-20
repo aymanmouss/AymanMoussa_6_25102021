@@ -1,7 +1,7 @@
 const mediatype = (data) => {
   if (data.type == "image") {
     return `
-            <img src="../medias/medias2/${data.photographerId}/${data.image}" alt="" class="photo" id=${data.id}>
+            <img src="../medias/medias2/${data.photographerId}/${data.image}" alt="${data.description}" class="photo" id=${data.id}>
             `;
   } else {
     return `
@@ -46,7 +46,8 @@ export default class MediaDisplay {
   photoLsit(data) {
     return `
         <article class="photo-card">
-            ${mediatype(data)}
+        <a href='#' class='photoLink'>${mediatype(data)}</a>
+          
             <section class="photo-data">
                 <p class="photo-name">${data.title}</p>
                 <p class="likes"> <span class='photoLikes' target=${

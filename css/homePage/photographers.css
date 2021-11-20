@@ -49,7 +49,11 @@
     height: 3.5em;
   }
   header h1 {
-    font-size: 0.9em;
+    font-size: 1.2em;
+  }
+  .tag,
+  .nav-list li {
+    margin-bottom: 0.5em;
   }
 }
 @media screen and (max-width: 387px) {

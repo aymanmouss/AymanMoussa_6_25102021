@@ -1,4 +1,3 @@
-// const slected = document.getElementsByClassName("slected");
 const dropDownMenu = document.getElementById("dropDown-menu");
 const slect = document.getElementsByClassName("slect");
 const one = document.getElementById("1");
@@ -6,9 +5,9 @@ const two = document.getElementById("2");
 const three = document.getElementById("3");
 const photos = document.getElementsByClassName("photos");
 const idLocation = window.location.search.split("?id=")[1];
+const dropDown = document.getElementsByClassName("dropDown");
 import MediaDisplay from "./mediaDisplay.js";
-// import DropDownFilter from "./dropDownFilter.js";
-// import LightBoxClass from "./lightBox2.js";
+
 let sortBy = [];
 export default class DropDown {
   constructor(data) {
