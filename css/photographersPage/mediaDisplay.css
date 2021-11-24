@@ -61,6 +61,37 @@ article h1 {
   color: #901c1c;
   max-width: 350px;
 }
+@media screen and (max-width: 1214px) {
+  .contact-me {
+    position: fixed;
+    bottom: 1em;
+    right: 39%;
+    padding: 0.5em;
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 880px) {
+  .contact-me {
+    position: fixed;
+    bottom: 1em;
+    right: 39%;
+    padding: 0.5em;
+    font-size: 1.3em;
+  }
+  section.dropDown {
+    display: none;
+  }
+  aside.likesPrice {
+    display: none;
+  }
+  .card {
+    margin: 0;
+    background-color: white;
+  }
+  .photos {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 455px) {
   .card {
     padding: 0;
@@ -85,8 +116,8 @@ article h1 {
   }
   ul.tags-card {
     position: absolute;
-    top: 22em;
-    font-size: 1em;
+    top: 26em;
+    font-size: 0.7em;
   }
   .tag,
   .nav-list li {
@@ -102,7 +133,7 @@ article h1 {
     margin-right: 0.5em;
   }
   article h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
   header {
     display: flex;
@@ -132,6 +163,42 @@ article h1 {
   }
   .fa-times:before {
     font-size: 0.7em;
+  }
+  .work {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 350px) {
+  .photo {
+    width: 290px;
+    height: 160px;
+  }
+  article.photographers-information {
+    margin-bottom: 7.5em;
+  }
+  ul.tags-card {
+    top: 33em;
+  }
+  form#formModal {
+    width: 20em;
+  }
+  form header h1 {
+    font-size: 2em !important;
+    z-index: 1000;
+  }
+}
+@media screen and (max-width: 285px) {
+  .photo {
+    width: 250px;
+    height: 160px;
+  }
+  photo {
+    width: 7.5em;
+    height: 7.5em;
+    margin-right: 0.5em;
+  }
+  form#formModal {
+    width: 18em;
   }
 }
 .likes {

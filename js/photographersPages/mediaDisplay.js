@@ -1,19 +1,4 @@
-const mediatype = (data) => {
-  if (data.type == "image") {
-    return `
-            <img src="../medias/medias2/${data.photographerId}/${data.image}" alt="${data.description}" class="photo" id=${data.id}>
-            `;
-  } else {
-    return `
-            <video controls class="photo" id=${data.id}>
-
-            <source src="../medias/medias2/${data.photographerId}/${data.video}" type="video/mp4">
-
-            Sorry, your browser doesn't support embedded videos.
-        </video>
-            `;
-  }
-};
+import MediaFactory from "../Factory/MediaFactory.js";
 
 export default class MediaDisplay {
   // photographer card
@@ -46,7 +31,7 @@ export default class MediaDisplay {
   photoLsit(data) {
     return `
         <article class="photo-card">
-        <a href='#' class='photoLink'>${mediatype(data)}</a>
+        <a href='#' class='photoLink'>${new MediaFactory(data).outerHTML}</a>
           
             <section class="photo-data">
                 <p class="photo-name">${data.title}</p>
