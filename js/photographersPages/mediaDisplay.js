@@ -35,10 +35,12 @@ export default class MediaDisplay {
           
             <section class="photo-data">
                 <p class="photo-name">${data.title}</p>
-                <p class="likes"> <span class='photoLikes' target=${
-                  data.likes
-                }> ${data.likes}</span>  
-                  <i class="fas fa-heart"></i></p>
+                <section class="likes"> 
+                <span class='photoLikes' target=${data.likes}> ${
+      data.likes
+    }</span>  
+                 <a href='#' class="fas fa-heart" aria-label="likes" role="button"></a>
+                 </section>
             </section>
         </article>
       `;

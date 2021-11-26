@@ -205,8 +205,13 @@ article h1 {
   display: flex;
   align-items: center;
 }
-.likes i {
+/* .likes i {
   margin-left: 0.5em;
+  color: #901c1c;
+} */
+.likes a {
+  margin-left: 0.5em;
+  color: #901c1c;
 }
 .likes-price {
   position: fixed;

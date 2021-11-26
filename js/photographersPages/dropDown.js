@@ -17,6 +17,7 @@ export default class DropDown {
       });
     };
     one.addEventListener("click", (e) => {
+      e.preventDefault();
       toggle();
       if (two.classList == "slect") {
         one.innerHTML = `Popularité <i class="fas fa-chevron-down"></i>`;
@@ -28,6 +29,7 @@ export default class DropDown {
       three.innerText = "Titre";
       three.classList.remove("active");
       if (slect[0].classList.value == "slect hiden") {
+        e.preventDefault();
         sortBy = data.media.sort((a, b) => {
           return b.likes - a.likes;
         });
@@ -39,8 +41,10 @@ export default class DropDown {
         });
       }
     });
+
     window.addEventListener("click", (e) => {
       if (e.target.id == "2") {
+        e.preventDefault();
         one.innerHTML = `Date <i class="fas fa-chevron-up"></i>`;
         toggle();
         sortBy = data.media.sort((a, b) => {
@@ -54,6 +58,7 @@ export default class DropDown {
         });
       }
       if (e.target.id == "3") {
+        e.preventDefault();
         one.innerHTML = `Titre <i class="fas fa-chevron-up"></i>`;
         three.classList.add("active");
         toggle();
@@ -68,6 +73,12 @@ export default class DropDown {
           }
         });
         // new LightBoxClass();
+      }
+    });
+    window.addEventListener("keypress", (e) => {
+      if (e.target.id == "1" && e.code === "Enter") {
+        toggle();
+        e.preventDefault();
       }
     });
   }

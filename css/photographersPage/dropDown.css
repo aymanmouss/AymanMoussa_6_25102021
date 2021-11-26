@@ -21,13 +21,20 @@
   flex-direction: column;
   align-items: center;
 }
-#dropDown-menu li {
+/* #dropDown-menu li {
   font-size: 1.5em;
   cursor: pointer;
   width: 100%;
   z-index: 1;
+} */
+#dropDown-menu a {
+  font-size: 1.5em;
+  cursor: pointer;
+  width: 100%;
+  z-index: 1;
+  color: #fff;
 }
-#dropDown-menu li:nth-child(2) {
+#dropDown-menu a:nth-child(2) {
   margin: 1em 0;
   border-top: solid 0.1em #fff;
   border-bottom: solid 0.1em #fff;
