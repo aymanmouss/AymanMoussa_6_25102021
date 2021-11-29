@@ -6,12 +6,14 @@ const photographersId = document.getElementsByClassName("photographers-id");
 export default class filter {
   filterTags(data) {
     navList[0].addEventListener("click", (e) => {
+      // Keyboard selection
       if (e.target.classList.value !== "active") {
         Array.from(aList).map((item) => {
           if (item.classList.value === "active") {
             item.classList.remove("active");
           }
         });
+        // click selection
         Array.from(tagList).map((item) => {
           if (item.classList.value === "active") {
             item.classList.remove("active");

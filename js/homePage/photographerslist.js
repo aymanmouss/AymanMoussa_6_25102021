@@ -1,4 +1,4 @@
-export default class photographerslist {
+export default class photographers {
   photograph(photograph) {
     return `
       <section class="photographers-id">
@@ -8,7 +8,7 @@ export default class photographerslist {
           <img class="photographers-photo" src="./medias/Photographers ID Photos/${
             photograph.portrait
           }"
-              alt='Nabeel Bradford portrait'>
+              alt='${photograph.alt}'>
           <h2 class="photographers-name">${photograph.name}</h2>
       </a>
       <p class="photographers-location">${photograph.city}, ${
